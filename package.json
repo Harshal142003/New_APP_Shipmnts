@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "request": "^2.88.2",
+    "three": "^0.149.0"
+  }
+}
