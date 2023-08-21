@@ -18,6 +18,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      body {
+        background-image: url("1.jpeg");
+        background-size: cover; /* Adjust as needed */
+        background-repeat: no-repeat; /* Adjust as needed */
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -52,16 +59,8 @@
               >
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">help</a></li>
-                <li><a class="dropdown-item" href="#">myprofile</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">reference</a>
-                </li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">USAGE GUIDE</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -89,7 +88,10 @@
       <main>
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
           <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
+            <div
+              class="card mb-4 rounded-3 shadow-sm"
+              style="background-color: rgba(255, 255, 255, 0.5)"
+            >
               <div class="card-header py-3">
                 <h4 class="my-0 fw-normal">
                   Temperature
@@ -109,7 +111,10 @@
             </div>
           </div>
           <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
+            <div
+              class="card mb-4 rounded-3 shadow-sm"
+              style="background-color: rgba(255, 255, 255, 0.5)"
+            >
               <div class="card-header py-3">
                 <h4 class="my-0 fw-normal">
                   DAY INFO<i class="fa-sharp fa-regular fa-house-day"></i>
@@ -128,7 +133,10 @@
             </div>
           </div>
           <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
+            <div
+              class="card mb-4 rounded-3 shadow-sm"
+              style="background-color: rgba(255, 255, 255, 0.5)"
+            >
               <div class="card-header py-3">
                 <h4 class="my-0 fw-normal">
                   Wind Info <i class="fa-solid fa-wind"></i>
@@ -308,7 +316,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="/JS/script.js"></script>
 
     <div class="err text-center">
       <h3>DATA MAY NOT BE UNAVAILABLE DUE TO API INACCESSIBILITY</h3>

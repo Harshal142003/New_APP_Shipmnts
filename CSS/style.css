@@ -1,0 +1,63 @@
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+#paticles-js {
+  height: 100%;
+}
+.header {
+  background-image: url(20166324354_fea69c77c5_t.jpg);
+  /* -webkit-background-size:cover ; */
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: WHITE;
+  overflow: hidden;
+}
+.card {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Adjust the alpha (opacity) value as needed */
+}
+
+/* Alternatively, target specific cards by their IDs or other selectors */
+/* Temperature Card */
+.temperature-card {
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
+}
+/* Day Info Card */
+.day-info-card {
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
+}
