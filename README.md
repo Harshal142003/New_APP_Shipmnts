@@ -1,4 +1,8 @@
 SETUP:
+
+
+
+
 START WITH INDEX.HTML
 -> That is main page,
 -> Enter the location you want to know weather data
