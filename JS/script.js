@@ -61,14 +61,17 @@ const getWe = (city, i) => {
         response.sunset;
     })
     .catch((err) => {
-      console.error(err);
-      if (err.message.includes("data not available")) {
-        console.log("The API does not have data for this place.");
-      } else {
-        // Handle other errors as needed
-        console.log("An error occurred while fetching data.");
-      }
+        console.error(err);
+        if (err.message.includes("data not available")) {
+            console.log("The API does not have data for this place.");
+          } else {
+            // Handle other errors as needed
+            console.log("An error occurred while fetching data.");
+            // You can display a different error message or take other actions here
+          }
     });
+    
+
 };
 
 var map1 = new Map([
@@ -79,6 +82,8 @@ var map1 = new Map([
   [5, "gujarat"],
   [6, "mumbai"],
 ]);
+
+
 
 for (let i = 1; i <= 6; i++) {
   getWe(map1.get(i), i);
