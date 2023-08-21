@@ -18,9 +18,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <style>
       body {
-        background-image: url("/IMAGES/1.jpeg");
+        background-image: url("/IMAGES/img3.jpeg");
         background-size: cover; /* Adjust as needed */
         background-repeat: no-repeat; /* Adjust as needed */
       }
@@ -33,10 +34,13 @@
         text-decoration: none;
       }
       .my-link {
-        color: blue;
+        color: red;
         text-decoration: underline;
       }
-    
+      body {
+        filter: blur(10px);
+        transition: filter 1s ease-in-out;
+      }
     </style>
   </head>
   <body>
@@ -266,7 +270,13 @@
     ></script>
     <script src="/JS/script.js"></script>
     <script src="/JS/C_F_convert.js"></script>
-
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          document.body.style.filter = "blur(0)";
+        }, 1000);
+      });
+    </script>
     <div class="err text-center">
       <h3>DATA MAY NOT BE UNAVAILABLE DUE TO API INACCESSIBILITY</h3>
     </div>
