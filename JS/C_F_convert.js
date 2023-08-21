@@ -12,8 +12,7 @@ function convertTemperature() {
     temperatureElement.textContent = `${fahrenheitTemperature.toFixed(2)}°F`;
   } else {
     // Toggle back to Celsius
-
-    temperatureElement.textContent = `${currentTemperature}°C`;
+    temperatureElement.textContent = `${currentTemperature.toFixed(2)}°C`;
   }
 }
 
