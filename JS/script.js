@@ -7,6 +7,7 @@ const options = {
 };
 
 const getWeather = (city) => {
+  // for header name
   cityName.innerHTML = city;
 
   fetch(
@@ -31,12 +32,10 @@ const submit = document.getElementById("submit");
 
 submit.addEventListener("click", (e) => {
   e.preventDefault();
-  getWeather(city.value);
+  getWeather(city1.value);
 });
 
 const getWe = (city, i) => {
-  // cityName.innerHTML=city;
-
   fetch(
     "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" + city,
     options
